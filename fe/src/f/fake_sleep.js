@@ -1,0 +1,1 @@
+export const fake_sleep= (ms)=> new Promise(res=> setTimeout(res, ms))

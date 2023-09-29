@@ -1,0 +1,2113 @@
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+@mixin flexv
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+@mixin s
+    flex: 1 1 0
+    height: 68px
+    @include flex
+    margin-left: 8px
+    padding: 0 16px
+    gap: 20px
+    position: relative
+@mixin ft
+    height: 20px
+    font-size: 14px
+    font-weight: 500
+    width: 100%
+@mixin ld
+    position: absolute
+    left: 0
+    top: 50px
+    width: 100%
+    background-color: #fff
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    border-radius: 6px
+    z-index: 2
+$fm: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+$bd: #d9dbcd
+$cl: #687176
+$bg: #f2f3f3
+html
+    width: 100%
+    background: $bg
+    min-height: 100vh
+    height: 100vh
+    body
+        width: 100%
+        height: 100%
+        margin: 0
+        font-size: 16px
+        font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        box-sizing: border-box
+        #la-1
+            position: relative
+            width: 100%
+            height: 100%
+            @include flex
+            justify-content: flex-start
+            flex-direction: column
+            .gl-2
+                min-height: 332px
+                padding: 11px
+                width: 960px
+                display: flex
+                flex-direction: column
+                background: #fff
+                .sk-2
+                    width: 100%
+                    // height: 28px
+                    @include flex
+                    justify-content: flex-start
+                    border-bottom: 3px solid #30c5f7
+                    margin: 0 !important
+                    .ds-4
+                        height: 100%
+                        display: flex
+                        flex-direction: row
+                        gap: 5px
+                        justify-content: center
+                        align-items: center
+                        .df-3
+                            padding: 4px 16px
+                            height: 20px
+                            @include flex
+                            background-color: #30c5f7
+                            border-radius: 4px 4px 0 0
+                            cursor: pointer
+                            user-select: none
+                            .ic-1
+                                width: 14px
+                                height: 14px
+                                fill: #fff
+                                @include flex
+                            .te-1
+                                font-size: 14px
+                                font-weight: 500
+                                color: #fff
+                                @include flex
+                                margin-left: 5px
+                .cp-2
+                    width: 100%
+                    height: 300px
+                    @include flex
+                    padding: 12px
+                    box-sizing: border-box
+                    border-radius: 3px
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                    .su-1
+                        animation: appear 0.5s linear 0s 1 
+                        flex: 1 1 0
+                        height: 100%
+                        .al-1
+                            @include flex
+                            flex: 1 1 0
+                            justify-content: flex-start
+                            height: 24px
+                            margin-left: 8px
+                            padding: 8px 0
+                            >div
+                                @include flex
+                                margin-left: 16px
+                                .ro-1
+                                    border-radius: 50%
+                                    width: 10px
+                                    height: 10px
+                                    border: 2px solid #fff
+                                    background-color: #2e89ff
+                                    @include flex
+                                .tx-1
+                                    height: 16px
+                                    font-size: 14px
+                                    font-weight: 500
+                                    color: #000
+                                    margin-left: 8px
+                        .ty-2
+                            flex: 1 1 0
+                            height: 68px
+                            @include flex
+                            margin-left: 8px
+                            padding: 0 16px
+                            gap: 20px
+                            position: relative
+                            .cv-1
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                transform: translate(-50%, -50%)
+                                width: 24px
+                                height: 24px
+                                margin-top: 10px
+                                background-color: rgb(1, 148, 243)
+                                border-radius: 50%
+                                cursor: pointer
+                                @include flex
+                                z-index: 2
+                            .ft-1
+                                flex: 1 1 0
+                                height: 100%
+                                .ks-1
+                                    flex: 1 1 0
+                                    height: 20px
+                                    font-size: 14px
+                                    font-weight: 500
+                                .fk-1
+                                    flex: 1 1 0
+                                    height: 48px
+                                    @include flex
+                                    justify-content: flex-start
+                                    position: relative
+                                    .kd-1
+                                        @include ld
+                                        height: auto
+                                        width: 590px
+                                        max-height: 525px
+                                        overflow: hidden
+                                        .ow-1
+                                            animation: appear 0.5s linear 0s 1 
+                                            width: 100%
+                                            height: auto
+                                            max-height: 525px
+                                            overflow-y: auto
+                                            .as-2
+                                                width: 100%
+                                                padding: 8px
+                                                box-sizing: border-box
+                                                border-bottom: 1px solid rgba(67, 67, 67, 0.17)  
+                                                background: #f7f9fa  
+                                                height: 38px
+                                                .jg-2
+                                                    @include ft
+                                            .lm-4
+                                                width: 100%
+                                                height: 57px
+                                                box-sizing: border-box
+                                                padding: 8px 16px
+                                                border-bottom: 1px solid #d9dcdc
+                                                @include flexv
+                                                cursor: pointer
+                                                &:hover
+                                                    background: #f2f0f5
+                                                    transition: background .1s linear
+                                                >div
+                                                    &:first-of-type
+                                                        @include ft
+                                                        font-size: 16px
+                                                        height: 20px
+                                                    &:last-of-type
+                                                        width: 100%
+                                                        font-size: 12px
+                                                        font-family: $fm
+                                                        margin-top: 4px
+                                                        height: 16px
+                                    .lq-1
+                                        padding: 0 8px
+                                        height: 40px
+                                        flex: 1 1 0
+                                        border-radius: 6px
+                                        @include flex
+                                        border: 1px solid #d9dcdc
+                                        .fl-1
+                                            width: 24px
+                                            height: 24px
+                                            margin-right: 8px
+                                            .il-1
+                                                width: 100%
+                                                height: 100%
+                                                object-fit: cover
+                                        .it-1
+                                            font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                            border: none
+                                            outline: none
+                                            height: 24px
+                                            font-size: 16px
+                                            font-weight: 600
+                                            text-transform: capitalize  
+                                            &::placeholder
+                                                color: $bd
+                        .tw-3
+                            margin-top: 20px
+                            @include s
+                            .ms-1
+                                flex: 1 1 0
+                                height: 100%
+                                .kq-1
+                                    @extend .ks-1
+                                    flex: 1 1 0
+                                    height: 20px
+                                    font-size: 14px
+                                    font-weight: 500
+                                    @include flex
+                                    justify-content: flex-start
+                                    
+                                    .hf-1
+                                        border: none
+                                        outline: none
+                                        width: 24px
+                                        height: 24px
+                                        @include flex
+                                        border-radius: 6px
+                                        background: #0194f3
+                                        margin-right: 8px
+                                        cursor: pointer
+                                        >span
+                                            border-left: 2px solid #fff
+                                            border-bottom: 2px solid #fff
+                                            width: 4px
+                                            height: 8px
+                                            transform: rotate(45deg) rotateY(180deg)
+                                            margin-bottom: 2px
+                                .sa-1
+                                    flex: 1 1 0
+                                    @include flex
+                                    justify-content: flex-start
+                                    padding: 0 8px
+                                    border: 1px solid #d9dcdc
+                                    height: 40px
+                                    margin-top: 4px
+                                    border-radius: 6px
+                                    .pa-1
+                                        width: 24px
+                                        height: 24px
+                                        margin-right: 8px
+                                        cursor: pointer
+                                    .jw-1
+                                        width: calc( 100% - 32px )
+                                        font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                        border: none
+                                        outline: none
+                                        height: 24px
+                                        font-size: 16px
+                                        font-weight: 600
+                                        display: flex
+                                        align-items: center
+                                        >div
+                                            height: 24px !important
+                                            >div
+                                                height: 100% !important
+                                                >input[type="text"]
+                                                    font-weight: 600
+                                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                                    padding-left: 0 !important
+                                                    user-select: none !important
+                                                    pointer-events: none !important
+                                                fieldset
+                                                    display: none 
+                    .su-2
+                        animation: appear 0.5s linear 0s 1
+                        flex: 1 1 0
+                        height: 100%
+                        @include flex
+                        justify-content: flex-start
+                        flex-direction: column
+                        .nn-1
+                            @include flex
+                            width: 100%
+                            height: 40px
+                        .cs-1
+                            animation: appear 0.5s linear 0s 1 
+                            width: 100%
+                            height: 80px
+                            .ld-1
+                                padding: 8px 30px
+                                height: 40px
+                                @include flex
+                                border-radius: 8px
+                                box-sizing: border-box
+                                background-color: rgb(255, 94, 31)
+                                gap: 6px
+                                cursor: pointer
+                                user-select: none   
+                                &:hover
+                                    &:active
+                                        opacity: 0.8
+                                .so-1
+                                    font-size: 16px
+                                    font-weight: 500
+                                    color: #fff
+                                    @include flex
+                            .wo-1
+                                flex: 1 1 0
+                                height: 20px
+                                font-size: 14px
+                                font-weight: 500
+                                white-space: nowrap
+                            .gr-1
+                                cursor: pointer
+                                &:hover
+                                    border: 1px solid #000
+                                width: 100%
+                                height: 40px
+                                @include flex
+                                justify-content: flex-start
+                                padding: 0 8px
+                                border: 1px solid #d9dcdc
+                                height: 42px
+                                margin-top: 4px
+                                border-radius: 6px
+                                box-sizing: border-box
+                                position: relative  
+                                .ao-1
+                                    animation: appear 0.5s linear 0s 1
+                                    background: #fff
+                                    position: absolute
+                                    left: 0
+                                    top: 45px
+                                    width: 100%
+                                    overflow: hidden
+                                    border-radius: 6px
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                                    z-index: 2
+                                    padding: 16px
+                                    height: 236px
+                                    box-sizing: border-box  
+                                    .ap-1
+                                        width: 100%
+                                        height: 40px
+                                        margin-bottom: 16px
+                                        @include flex
+                                        justify-content: space-between
+                                        >div
+                                            &:first-of-type
+                                                height: 24px
+                                                @include flex
+                                                >div
+                                                    @include ft
+                                            &:last-of-type
+                                                @include flex
+                                                
+                                                .gh-1, .rw-1
+                                                    border: none
+                                                    outline: none
+                                                    width: 40px
+                                                    height: 40px
+                                                    @include flex
+                                                    border-radius: 6px
+                                                    background: #f7f9fa
+                                                .rw-1
+                                                    box-sizing: border-box
+                                                    margin: 0 4px
+                                                    border: 1px solid #d9dcdc
+                                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                                    font-weight: 600  
+                                    .de-1
+                                        margin-top: 32px
+                                        height: 20px
+                                        width: 100%
+                                        @include flex
+                                        justify-content: flex-end
+                                        .fk-1
+                                            cursor: pointer
+                                            background: inherit
+                                            border: none
+                                            outline: none
+                                            color: #0194f3
+                                            font-weight: bold
+                                            font-size: 14px
+                                            font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+                                .ic-1
+                                    width: 24px
+                                    height: 24px
+                                    margin-right: 8px
+                                .it-1
+                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                    border: none
+                                    outline: none
+                                    height: 24px
+                                    font-size: 16px
+                                    font-weight: 600
+                                    text-transform: uppercase
+                                    width: calc( 100% - 32px )
+                        .cs-2
+                            animation: appear 0.5s linear 0s 1 
+                            width: 100%
+                            height: 80px
+                            margin-top: 8px
+                            .wo-1
+                                flex: 1 1 0
+                                height: 20px
+                                font-size: 14px
+                                font-weight: 500
+                            .gr-1
+                                cursor: pointer
+                                &:hover
+                                    border: 1px solid #000
+                                width: 100%
+                                height: 40px
+                                @include flex
+                                justify-content: flex-start
+                                padding: 0 8px
+                                border: 1px solid #d9dcdc
+                                height: 42px
+                                margin-top: 4px
+                                border-radius: 6px
+                                box-sizing: border-box
+                                position: relative
+                                .vf-2
+                                    animation: appear 0.5s linear 0s 1
+                                    background: #fff
+                                    position: absolute
+                                    left: 0
+                                    top: 40px
+                                    width: 100%
+                                    max-height: 325px
+                                    height: auto
+                                    overflow: hidden
+                                    border-radius: 6px
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+                                    z-index: 2
+                                    .ro-1
+                                        border: 1px solid #d9dcdc
+                                        width: 100%
+                                        max-height: 325px
+                                        height: auto
+                                        overflow: auto
+                                        .cw-1
+                                            transition: background .1s linear
+                                            cursor: pointer
+                                            &:hover
+                                                background: #f2f0f5
+                                            width: 100%
+                                            height: 56px
+                                            box-sizing: border-box
+                                            padding: 8px 12px
+                                            @include flex
+                                            justify-content: flex-start
+                                            .vn-1
+                                                width: 8px
+                                                height: 8px
+                                                background: #0194f3
+                                                border-radius: 50%
+                                                margin-right: 6px
+                                            .ka-1
+                                                .pw-1
+                                                    @include ft
+                                                    font-size: 14px
+                                                .vk-2
+                                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                                    font-size: 12px
+                                                    color: #687176
+                                .ic-1
+                                    width: 24px
+                                    height: 24px
+                                    margin-right: 8px
+                                .it-1
+                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                    border: none
+                                    outline: none
+                                    height: 24px
+                                    font-size: 16px
+                                    font-weight: 600
+                                    text-transform: uppercase
+                                    width: calc( 100% - 64px )
+                                .dr-1
+                                    margin-left: 8px
+                                    cursor: pointer
+                                    transition: transform .15s linear
+                    .pg-1
+                        animation: appear 0.5s linear 0s 1 
+                        padding: 4px
+                        width: 100%
+                        height: 100%
+                        .do-1
+                            flex: 1 1 0
+                            height: 68px
+                            @include flex
+                            justify-content: space-between
+                            padding: 0 8px
+                            .fa-1
+                                position: relative
+                                flex: 1 1 0
+                                @include flex
+                                justify-content: space-between
+                                flex-direction: column
+                                height: inherit
+                                position: relative
+                                .er-1
+                                    width: 100%
+                                    @include flex
+                                    
+                                .es-1
+                                    >div
+                                        @include ft
+                                    .jw-1
+                                        font-weight: 600
+                                .fi-1
+                                    position: absolute
+                                    left: 0
+                                    top: 40px
+                                .ri-1
+                                    width: 100%     
+                                    height: 20px
+                                    font-size: 14px
+                                    font-weight: 500
+
+                                .ei-1
+                                    height: 40px
+                                    flex: 1 1 0
+                                    width: 100% 
+                                    @include flex
+                                    justify-content: space-between
+                                    gap: 15px
+                                    >div
+                                        &:first-of-type
+                                            flex: 1 1 0
+                                            height: 40px
+                                            @include flex
+                                            justify-content: flex-start
+                                            padding: 0 8px
+                                            border: 1px solid #d9dcdc
+                                            border-radius: 6px  
+                                            .rw-1
+                                                margin-right: 8px
+                                                fieldset
+                                                    display: none !important
+                                                >div
+                                                    height: 24px !important
+                                                    max-width: 120px !important
+                                        .it-1
+                                            width: calc( 100% - 32px )
+                                            font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                            border: none
+                                            outline: none
+                                            height: 24px
+                                            font-size: 16px
+                                            font-weight: 600
+                                        .ld-1
+                                            padding: 8px 30px
+                                            height: 40px
+                                            @include flex
+                                            border-radius: 8px
+                                            box-sizing: border-box
+                                            background-color: rgb(255, 94, 31)
+                                            gap: 6px
+                                            cursor: pointer
+                                            user-select: none   
+                                            &:hover
+                                                &:active
+                                                    opacity: 0.8
+                                            .so-1
+                                                font-size: 16px
+                                                font-weight: 500
+                                                color: #fff
+                                                @include flex
+                        .eo-1
+                            flex: 1 1 0
+                            height: 68px
+                            @include flex
+                            flex-direction: column
+                            justify-content: space-between
+                            .bm-1
+                                height: 20px
+                                font-size: 14px
+                                font-weight: 500
+                                width: 100%
+                            .sds-2
+                                position: relative
+                                width: 100%
+                                height: 40px
+                                border-radius: 6px
+                                @include flex
+                                justify-content: flex-start
+                                padding: 0 8px
+                                box-sizing: border-box
+                                border: 1px solid #d9dcdc
+                                .sg-1
+                                    animation: appear 0.5s linear 0s 1
+                                    z-index: 2
+                                    position: absolute
+                                    width: 100%
+                                    height: auto
+                                    max-height: 518px
+                                    border-radius: 8px
+                                    overflow: auto
+                                    left: 0
+                                    top: 40px
+                                    background: #fff
+                                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+                                    .gt-1
+                                        padding: 8px
+                                        box-sizing: border-box
+                                        border-bottom: 1px solid rgba(67, 67, 67, 0.17)  
+                                        @include ft
+                                        background: #f7f9fa  
+                                        height: 38px
+                                    .ip-1
+                                        background: #fff
+                                        width: 100%
+                                        padding: 8px
+                                        box-sizing: border-box
+                                        height: 65px
+                                        border-bottom: 1px solid rgba(67, 67, 67, 0.17)  
+                                        cursor: pointer
+                                        &:hover
+                                            background: #f2f0f5
+                                            transition: background 0.1s linear
+                                        .gf-1
+                                            width: 100%
+                                            height: 48px
+                                            display: flex
+                                            flex-direction: column
+                                            justify-content: space-between
+                                            >div
+                                                @include flex
+                                                justify-content: space-between
+                                                &:first-of-type
+                                                    height: 26px 
+                                                &:last-of-type
+                                                    height: 20px
+                                                .hr-1                              
+                                                    @include ft
+                                                    font-size: 16px
+                                                    font-weight: 600
+                                                .ut-1
+                                                    text-transform: capitalize
+                                                    white-space: nowrap
+                                                    height: 16px
+                                                    padding: 4px 12px
+                                                    box-sizing: content-box
+                                                    font-size: 12px
+                                                    color: #0194f3
+                                                    border-radius: 80px
+                                                    border: 1px solid #0194f3 
+                                                .hr-2  
+                                                    @include ft
+                                                    font-size: 14px
+                                                    font-weight: 500
+                                                .ut-2
+                                                    font-size: 12px
+                                                    color: #687176
+                                                    white-space: nowrap
+                                .ic-3
+                                    width: 24px
+                                    height: 24px
+                                    margin-right: 8px
+                                .it-1
+                                    width: calc( 100% - 32px )
+                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                    border: none
+                                    outline: none
+                                    height: 24px
+                                    font-size: 16px
+                                    font-weight: 600
+                                    &::placeholder
+                                        color: #d9dcdc
+                        .ce-1
+                            flex: 1 1 0
+                            height: 68px
+                            @include flex
+                            gap: 10px
+                            >div
+                                padding: 8px
+                                flex: 1 1 0
+                                height: 100%
+                                @include flex
+                                flex-direction: column
+                                justify-content: space-between
+                                
+                                .ri-1
+                                    height: 20px
+                                    font-size: 14px
+                                    font-weight: 500
+                                    width: 100%
+                                    user-select: none
+                                .ei-1
+                                    width: 100%
+                                    border: 1px solid #d9dcdc
+                                    border-radius: 6px
+                                    height: 40px
+                                    padding: 0 8px
+                                    @include flex
+                                    box-sizing: border-box
+                                    .rw-1
+                                        width: 24px
+                                        height: 24px
+                                        margin-right: 8px
+                                    .jw-1
+                                        width: calc( 100% - 32px )
+                                        font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                        border: none
+                                        outline: none
+                                        height: 24px
+                                        font-size: 16px
+                                        font-weight: 600
+                                        display: flex
+                                        align-items: center
+                                        p
+                                            white-space: nowrap
+                                            text-transform: capitalize  
+                                            margin: 0
+                                        >div
+                                            height: 24px !important
+                                            >div
+                                                height: 100% !important
+                                                >input[type="text"]
+                                                    font-weight: 600
+                                                    font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                                    padding-left: 0 !important
+                                                    user-select: none !important
+                                                    pointer-events: none !important
+                                                fieldset
+                                                    display: none 
+                                        .it-1
+                                            width: calc( 100% - 32px )
+                                            font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                                            border: none
+                                            outline: none
+                                            height: 24px
+                                            font-size: 16px
+                                            font-weight: 600
+            .aoe-1
+                margin-top: 10px
+                width: 100%
+                height: 100%   
+                @include flexv
+                justify-content: flex-start
+                background: rgb(242, 243, 243)
+                overflow-x: hidden
+                .aso-1
+                    background: rgb(255, 255, 255)
+                    max-width: 1032px
+                    width: 100%
+                    min-width: auto
+                    height: 88px
+                    border-radius: 8px
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                    box-sizing: border-box
+                    padding: 20px
+                    @include flex
+                    justify-content: space-between
+                    >div
+                        @include flexv
+                    .dkw-1
+                        justify-content: flex-start
+                        .oew-2
+                            white-space: nowrap
+                            width: 100%
+                            @include ft
+                            font-size:  16px
+                            margin-bottom: 8px
+                            height: 20px
+                        .ewo-4
+                            @include ft
+                            color: #687173
+                    .iew-1
+                        @include flex
+                        >div
+                            @include flex
+                            padding: 8px 12px 
+                            box-sizing: border-box
+                            height: 32px
+                            background: #0194f3
+                            border-radius: 6px
+                            cursor: pointer
+                            user-select: none
+                            &:hover
+                                &:active
+                                    opacity: 0.75
+                            img
+                                margin-right: 8px
+                            .adw-2
+                                @include ft
+                                color: #fff 
+                                white-space: nowrap
+                .kew-1
+                    max-width: 1032px
+                    width: 100%
+                    box-sizing: border-box
+                    padding: 8px
+                    height: 54px
+                    @include flex
+                    justify-content: space-between
+                    margin-top: 8px
+                    .wqo-1
+                        @include flex
+                        .sai-1
+                            height: 20px
+                            margin-right: 24px
+                            @include ft
+                            width: 44px
+                            white-space: nowrap
+
+                        .wai-1
+                            @include flex
+                            .sqo-1
+                                box-sizing: border-box
+                                height: 36px
+                                padding: 8px 16px
+                                border-radius: 80px
+                                background: #f7f9fa
+                                @include flex
+                                margin-bottom: 4px
+                                margin-right: 16px
+                                cursor: pointer
+                                .qra-1
+                                    @include flex
+                                    @include ft
+                                    color: #0194f3
+                                    margin-right: 4px
+                                    white-space: nowrap
+                                .dko-1
+                                    width: 0
+                                    height: 0
+                                    border-top-width: 8px
+                                    border-top-style: solid
+                                    border-top-color: #0194f3
+                                    border-color: #0194f3 #f7f9fa #f7f9fa #f7f9fa
+                                    border-style: solid
+                                    border-width: 5px 5px 5px 5px
+                                    height: 0px
+                                    width: 0px
+                                    margin-top: 8px
+                            .oifairo-q2
+                                position: relative
+                                .dsqeo-1
+                                    animation: appear 0.5s linear 0s 1
+                                    position: absolute
+                                    height: auto
+                                    padding: 20px
+                                    box-sizing: border-box
+                                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                                    top: 40px
+                                    left: 0
+                                    width: 300px
+                                    background: #fff
+                                    z-index: 3
+                                    border-radius: 6px
+                                    .ddoeqw-1
+                                        .teai-1
+                                            @include ft
+                                        .sjwroe-1
+                                            margin-top: 10px
+                                            width: 100%
+                                            @include flex
+                                            gap: 16px
+                                            >div
+                                                flex: 1 1 0
+                                                @include flexv
+                                                >div
+                                                    width: 100% 
+                                                    height: 56px
+                                                    background: #f7f9fa
+                                                    margin-bottom: 16px
+                                                    border-radius: 6px
+                                                    @include flexv
+                                                    
+                                                    >div
+                                                        @include flexv
+                                                        &:first-of-type
+                                                            font-size: 12px
+                                                            color: $cl
+                                                        &:last-of-type
+                                                            color: #0194f3
+                                                            @include ft
+
+                            .dsuew-1
+                                position: relative
+                                
+                                .dsqeo-1
+                                    animation: appear 0.5s linear 0s 1
+                                    position: absolute
+                                    height: auto
+                                    padding: 20px
+                                    box-sizing: border-box
+                                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                                    top: 40px
+                                    left: 0
+                                    width: 300px
+                                    background: #fff
+                                    z-index: 3
+                                    border-radius: 6px
+                                    &:hover
+                                        opacity: 1 !important
+                                    .ddoeqw-1
+                                        flex: 1 1 0
+                                        height: 50px
+                                        @include flex
+                                        justify-content: space-between
+                                        .teai-1
+                                            @include flex
+                                            @include ft
+                                            width: max-content
+                                            font-size: 16px
+                                            height: 100%
+                                            align-items: flex-start
+                                        .skfrtw-4
+                                            @include flexv
+                                            justify-content: flex-start
+                                            .dsdewrowq-1
+                                                @include ft
+                                                color: #0194f3
+                                            .fr0wowe-3
+                                                @include ft
+                                                color: $cl
+                                                font-size: 12px
+                                    .dkwoewew-1
+                                        margin-top: 10px
+                                        width: 100%
+                                        height: auto
+                                        .wejwekwje-1
+                                            width: 100%
+                                            height: 20px
+                                            @include flex
+                                            justify-content: flex-start
+                                            .hf-1
+                                                border: none
+                                                outline: none
+                                                min-width: 24px
+                                                height: 24px
+                                                @include flex
+                                                border-radius: 6px
+                                                background: #0194f3
+                                                margin-right: 8px
+                                                cursor: pointer
+                                                >span
+                                                    border-left: 2px solid #fff
+                                                    border-bottom: 2px solid #fff
+                                                    width: 4px
+                                                    height: 8px
+                                                    transform: rotate(45deg) rotateY(180deg)
+                                                    margin-bottom: 2px
+                                            .dokwee-1
+                                                @include flex
+                                                
+                                                img
+                                                    margin-right: 8px
+                                                .skeeqwqwp-1
+                                                    @include ft
+                                                    white-space: nowrap
+                                            .drwor-ew3kq       
+                                                @include ft
+                                                color: $cl
+                                                white-space: nowrap
+                                                @include flex
+                                                justify-content: flex-end
+                                                width: max-conten
+                                                text-align: right
+                                                font-size: 12px
+                    .dpq-3
+                        >div
+                            @include flex
+                            cursor: pointer
+                            height: 36px
+                            padding: 8px 16px
+                            border-radius: 80px
+                            background: #f7f9fa
+                            box-sizing: border-box
+                            // &:hover
+                            //     &:active
+                            //         opacity: 0.5
+                            .soe-1
+                                @include ft
+                                color: #0194f3
+                                margin-right: 5px
+                                @include flex
+                            .sew-1
+                                min-width: 16px 
+                                height: 16px
+                                border-radius: 50%
+                                background: #0194f3
+                                @include flex
+                .qoe-1
+                    transition: outline .05s linear
+                    &:hover
+                        outline: 1px solid #0194f3
+                    max-width: 1022px
+                    width: 100%
+                    height: 174px
+                    border-radius: 6px
+                    background: #fff
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px
+                    .sow-1
+                        box-sizing: border-box
+                        padding: 24px 24px 0 24px   
+                        @include flex
+                        justify-content: space-between   
+                        .koa-1
+                            flex: 1 1 0
+                            height: 100%
+                            .kwe-3
+                                // height: 57px
+                                @include flex
+                                .gae-2
+                                    width: 216px
+                                    height: 100%    
+                                    @include flex
+                                    align-items: center
+                                    >div
+                                        &:first-of-type
+                                            @include flex
+                                            margin-right: 8px
+                                        &:last-of-type
+                                            @include ft
+                                            font-size: 16px
+                                            // height: 28px
+                                .ekw-5
+                                    flex: 1 1 0
+                                    height: 100%
+                                    @include flex
+                                    .iwe-2
+                                        @include flex
+                                        .eewo-1
+                                            margin: 0 40px
+                                            height: 57px
+                                            width: 96px
+                                            @include flexv
+                                            .jiew-2
+                                                height: 20px
+                                                @include flex
+                                                color: $cl
+                                                @include ft
+                                            .owew-2
+                                                color: $cl
+                                                @include ft
+                                                width: 96px
+                                                @include flex
+                                                .ewoq-4
+                                                    width: 8px
+                                                    height: 8px
+                                                    border-radius: 50%
+                                                    border: 1px solid $bd
+                                                    background: #fff
+                                                .ewrq-3
+                                                    width: 8px
+                                                    height: 8px
+                                                    border-radius: 50%
+                                                    background: #cdd0d1
+                                                .dwiew-1
+                                                    flex: 1 1 0
+                                                    height: 1px
+                                                    border-bottom: 1px solid $bd
+                                        >div
+                                            &:first-of-type,&:last-of-type
+                                                @include flexv
+                                                .dwo-3
+                                                    @include ft
+                                                    @include flex
+                                                    white-space: nowrap
+                                                .anj-7
+                                                    padding: 0 8px
+                                                    height: 20px
+                                                    margin-top: 8px
+                                                    padding-bottom: 2px
+                                                    text-transform: uppercase
+                                                    border-radius: 20px
+                                                    @include ft
+                                                    color: #687176
+                                                    background: #f2f3f3
+                                                    font-size: 16px
+                                                    width: max-content
+
+                            // .eoq-5
+
+                        .fsm-1
+                            max-width: 200px
+                            min-width: 165px
+                            -webkit-box-pack: start
+                            margin-left: 16px    
+                            height: 100%
+                            @include flexv
+                            .dkoew-1
+                                height: 20px
+                                margin-bottom: 2px
+                                @include ft
+                                color: $cl
+                                text-decoration-line: line-through
+                                @include flex
+                                justify-content: flex-end
+                            .oweweo-2
+                                height: 20px
+                                margin-bottom: 20px
+                                @include flex
+                                
+                                .dkoekw-1
+                                    color: #ff5e1f
+                                    @include ft
+                                    font-size: 20px
+                                    white-space: nowrap
+                                    @include flex
+                                    font-weight: 600
+                                    
+                                .dwejwe-1
+                                    @include ft
+                                    @include flex
+                                    color: $cl
+                            .iwtap-3
+                                width: 170px
+                                height: 20px
+                                @include flex
+                                background: #ff5e1f
+                                color: #fff 
+                                @include ft
+                                padding: 8px 0
+                                border-radius: 8px
+                                user-select: none
+                                cursor: pointer
+                                &:hover
+                                    &:active
+                                        opacity: 0.5
+                            
+                .css-2
+                    width: 1024px
+                    min-height: 12px
+                    @include flex
+.hv-1
+    transition: outline .075s linear, transform 0.25s linear
+    position: relative
+    .os-1
+        position: absolute
+        right: 0
+        top: 26%
+        width: 16px
+        height: 16px
+        margin-left: 4px
+        cursor: pointer
+        transition: transform 0.25s linear
+        @include flex
+        margin-right: 8px
+    &:hover
+        outline: 1px solid 
+    .ao-1
+        animation: appear 0.5s linear 0s 1
+        background: #fff
+        position: absolute
+        left: 0
+        top: 45px
+        width: 100%
+        overflow: hidden
+        border-radius: 6px
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+        z-index: 2
+        padding: 16px
+        height: 236px
+        box-sizing: border-box  
+        .ap-1
+            width: 100%
+            height: 40px
+            margin-bottom: 16px
+            @include flex
+            justify-content: space-between
+            >div
+                &:first-of-type
+                    height: 24px
+                    @include flex
+                    >div
+                        @include ft
+                &:last-of-type
+                    @include flex
+                    
+                    .gh-1, .rw-1
+                        border: none
+                        outline: none
+                        width: 40px
+                        height: 40px
+                        @include flex
+                        border-radius: 6px
+                        background: #f7f9fa
+                    .rw-1
+                        box-sizing: border-box
+                        margin: 0 4px
+                        border: 1px solid #d9dcdc
+                        font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                        font-weight: 600  
+        .de-1
+            margin-top: 32px
+            height: 20px
+            width: 100%
+            @include flex
+            justify-content: flex-end
+            .fk-1
+                cursor: pointer
+                background: inherit
+                border: none
+                outline: none
+                color: #0194f3
+                font-weight: bold
+                font-size: 14px
+                font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+.lt-3
+    position: relative
+    .lm-4
+        position: relative
+        .os-1
+            position: absolute
+            right: 0
+            top: 26%
+            width: 16px
+            height: 16px
+            margin-left: 4px
+            cursor: pointer
+            transition: transform 0.25s linear
+            @include ft
+            margin-right: 8px
+        .vf-2
+            animation: appear 0.5s linear 0s 1
+            background: #fff
+            position: absolute
+            left: 0
+            top: 40px
+            width: 100%
+            max-height: 325px
+            height: auto
+            overflow: hidden
+            border-radius: 6px
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+            z-index: 2
+            .ro-1
+                border: 1px solid $bd
+                width: 100%
+                max-height: 325px
+                height: auto
+                overflow: auto
+                .cw-1
+                    transition: background .1s linear
+                    cursor: pointer
+                    &:hover
+                        background: #f2f0f5 
+                    width: 100%
+                    height: 56px
+                    box-sizing: border-box
+                    padding: 8px 12px
+                    @include flex
+                    justify-content: flex-start
+                    .vn-1
+                        width: 8px
+                        height: 8px
+                        background: #0194f3
+                        border-radius: 50%
+                        margin-right: 6px
+                    .ka-1
+                        .pw-1
+                            @include ft
+                            font-size: 14px
+                        .vk-2
+                            font-family: "Museosans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+                            font-size: 12px
+                            color: #687176
+.ld-1
+    @include flex
+    width: 100%
+    justify-content: flex-start
+    div
+        @include ft
+        font-size: 16px
+.ia-1
+    padding: 8px 30px
+    height: 40px
+    @include flex
+    border-radius: 8px
+    box-sizing: border-box
+    background-color: rgb(255, 94, 31)
+    gap: 6px
+    cursor: pointer
+    user-select: none   
+    &:hover
+        &:active
+            opacity: 0.8
+    .so-1
+        font-size: 16px 
+        font-weight: 500
+        color: #fff
+        @include flex
+.dkw-1
+    text-decoration: none   
+.hf-1
+    border: none
+    outline: none
+    width: 24px
+    height: 24px
+    @include flex
+    border-radius: 6px
+    background: #0194f3
+    margin-right: 8px
+    cursor: pointer
+    >span
+        border-left: 2px solid #fff
+        border-bottom: 2px solid #fff
+        width: 4px
+        height: 8px
+        transform: rotate(45deg) rotateY(180deg)
+        margin-bottom: 2px
+.gaerara-1
+    position: relative
+    .dsqeo-1
+        animation: appear 0.5s linear 0s 1  
+        position: absolute
+        height: auto
+        padding: 20px
+        box-sizing: border-box
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+        top: 40px
+        width: 300px
+        background: #fff
+        z-index: 3
+        right: 0
+        height: auto !important
+        border-radius: 6px !important
+        @include flexv
+
+        &:hover
+            opacity: 1 !important
+        .ddoeqw-1
+            flex: 1 1 0
+            height: 50px
+            @include flex
+            justify-content: space-between
+            .teai-1
+                @include flex
+                @include ft
+                width: max-content
+                font-size: 16px
+                height: 100%
+                align-items: flex-start
+.fdgwergr-1
+    flex-direction: column !important
+    .ddoeqw-1
+        width: 100%
+        justify-content: flex-start
+        .teai-1
+            width: 100%
+@keyframes appear
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@mixin flexS
+    display: flex
+    justify-content: flex-start
+    align-items: center
+$clb: #0194f3
+.dsjiewwew
+    @include flexS
+    margin-top: 16px
+    *
+        box-sizing: border-box
+    .dsijeesawdad
+        width: 100%
+        max-width: 1032px
+        @include flex
+        align-items: flex-start
+        
+        .sjskeekweow
+            max-width: 302px
+            width: 100%
+            border-radius: 6px
+            box-sizing: border-box
+            .fssdafgrgeira
+                padding: 8px
+                @include flexv
+                width: 100%
+                margin-bottom: 10px
+                background: #fff
+                align-items: flex-start
+                .jdefkgjdsfdsgjdsk
+                    font-size: 14px
+                    color: $cl
+                    padding-bottom: 8px
+                .fgwerwtrwette
+                    @include flex
+                    flex-wrap: wrap
+                    gap: 10px
+                    .wrtrwrtrw
+                        width: 48%
+                        @include flex
+                        justify-content: flex-start
+                        gap: 8px
+                        >input
+                            cursor: pointer
+                        >div
+                            white-space: nowrap
+                    
+            .kfwekgopef
+                padding: 8px
+                @include flex
+                width: 100%
+                justify-content: space-between
+                margin-bottom: 10px
+                background: #fff
+
+                >div
+                    white-space: nowrap
+                    &:first-of-type
+                        @include ft
+                        width: max-content
+                        font-size: 16px
+                    &:last-of-type
+                        color: $clb
+                        @include ft
+                        width: max-content
+            .bjdfbdsfbfdf
+                background: #fff
+
+                font-size: 14px
+                color: $cl
+                padding: 8px
+                border-bottom: 1px solid $bd
+            .dfsfgwrterww
+                margin-top: 10px
+                background: #fff
+                padding: 8px
+                .gdfjerdgrwttew
+                    margin-bottom: 8px
+                .grhfrwthrwtertw
+                    width: 100%
+                    @include flex
+                    justify-content: space-between
+                    margin-bottom: 12px
+                    >div
+                        border-radius: 80px
+                        padding: 4px 10px
+                        border: 1px solid $bd
+            .fkkfdgrwketoepre
+                margin-top: 10px
+                background: #fff
+                padding: 8px
+                .fdfdfgklesfgkdfmal
+                    @include flex
+                    justify-content: flex-start
+                    gap: 10px
+                    margin-bottom: 8px
+                    input
+                        cursor: pointer
+                        width: 20px
+                        height: 20px
+            .fkkfdgrwketoepre
+                .gkorkawrklsgr
+                    .djfiejwaejwew
+                        @include flex
+                        justify-content: flex-start
+                        gap: 10px
+                        margin-bottom: 8px
+                        input
+                            cursor: pointer
+                            width: 20px
+                            height: 20px
+                        .opdrkoprkwopewe
+                            text-transform: capitalize
+
+        .rijererwrwe
+            flex: 1 1 0
+            @include flexv
+            .sfjepeqkpoqwow
+                margin-bottom: 10px
+                background: #fff
+                max-width: 640px
+                width: 100%
+                height: 178px
+                border-radius: 6px
+                border: 1px solid $bd
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px
+                overflow: hidden
+                @include flex
+                transition: outline .1s linear
+                &:hover
+                    outline: 1px solid $clb
+                .fddkfshdfijsdd
+                    width: 132px
+                    height: 100%
+                    img
+                        width: 100%
+                        object-fit: cover
+                        object-position: center
+                        height: 100%
+                .fjkdrwaejeioaw
+                    flex: 1 1 0
+                .djfjlejwioejqi
+                    .pofkwopeas
+                        width: 100%
+                        img
+                            width: 16px
+                            height: 16px
+                    width: 160px
+                    height: 100%
+                    border-left: 1px solid $bd
+                    @include flexv
+                    justify-content: space-between
+                    padding: 16px 8px 16px 16px
+                    .fkfapwokwopewaw
+                        width: 100%
+                        color: #f96d01
+                        font-weight: 700
+                        font-size: 20px
+                .fjkdrwaejeioaw
+                    height: 100%
+                    padding: 16px 
+                    .ijwekpoawkaopaw
+                        @include ft
+                        font-size: 18px
+                        margin-bottom: 8px 
+                        white-space: nowrap
+                    .jeoiejrirjioewjioejsiowep
+                        @include flex
+                        justify-content: flex-start
+                        gap: 10px
+                        margin-bottom: 8px
+                        .diosrjeirawpipwoawwa
+                            border-radius: 80px
+                            border: 1px solid $clb
+                            font-size: 12px
+                            @include flex
+                            color: $clb
+                            padding: 2px 8px
+                            font-weight: 600
+                    .fpoiopedfopsfdkgopdsdfdsef
+                        @include flex
+                        justify-content: flex-start
+                        gap: 4px
+                        .kfpkropepeeas
+                            font-size: 12px 
+                            color: $cl
+
+
+.dkoakaepkeopwkpaw
+    text-align: right
+    text-decoration-line: line-through
+    color: $cl
+    font-size: 14px
+    font-weight: 400
+.fjsijpskopwopwoa
+    white-space: nowrap
+.grhfrwthrwtertw
+    width: 100%
+    @include flex
+    justify-content: space-between
+    margin-bottom: 12px
+    >div
+        border-radius: 80px
+        padding: 4px 10px
+        border: 1px solid $bd
+.wi_2
+    box-shadow: none !important
+.iad-1
+    background: #fff
+    border-radius: 10px
+    .ld-2
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        text-align: center
+        width: max-content
+        padding: 8px 30px
+        height: 40px
+        @include flex
+        border-radius: 8px
+        box-sizing: border-box
+        background-color: rgb(255, 94, 31)
+        gap: 6px
+        cursor: pointer
+        user-select: none
+        margin-bottom: 12px   
+        &:hover
+            &:active
+                opacity: 0.8
+        .so-1
+            font-size: 16px
+            font-weight: 500
+            color: #fff
+            @include flex
+.sk-2
+    height: 27px !important
+.kso-1
+    position: relative
+    top: -80px
+.awo-2
+    background-color:rgba(205,208,209,1.00)
+    border-top-left-radius: 9999px
+    border-top-right-radius: 9999px
+    border-bottom-right-radius: 9999px
+    border-bottom-left-radius: 9999px
+    object-fit: fill
+    object-position:50% 50
+.dewq-2
+    object-fit: fill
+    object-position:50% 50%
+.dsowe_2
+    &:hover
+        &:active
+            opacity: 0.7
+.sdkakdekqwekweorwe
+    @include flex
+    gap: 30px
+    div
+        @include flex
+        gap: 10px
+        .jiew-2
+            white-space: nowrap
+        .owew-2
+            gap: 0
+        .dwiew-1
+            width: 50px
+        .dwo-3
+            @include ft
+            @include flex
+            white-space: nowrap
+        .anj-7
+            padding: 0 8px
+            height: 20px
+            margin-top: 8px
+            padding-bottom: 2px
+            text-transform: uppercase
+            border-radius: 20px
+            @include ft
+            color: #687176
+            background: #f2f3f3
+            font-size: 16px
+            width: max-content
+.eewo-1
+    margin: 0 40px
+    height: 57px
+    width: 96px
+    @include flexv
+    flex-direction: column !important
+    .jiew-2
+        height: 20px
+        @include flex
+        color: $cl
+        @include ft
+    .owew-2
+        color: $cl
+        @include ft
+        width: 96px
+        @include flex
+        .ewoq-4
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            border: 1px solid $bd
+            background: #fff
+        .ewrq-3
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background: #cdd0d1
+        .dwiew-1
+            flex: 1 1 0
+            height: 1px
+            border-bottom: 1px solid $bd
+.dsplplpwlpawlwpaw,.sdjsiajwiawa    
+    user-select: none
+    cursor: pointer
+    &:hover
+        &:active
+            opacity: 0.6
+.sfjepeqkpoqwow
+    margin-bottom: 10px
+    background: #fff
+    max-width: 640px
+    width: 100%
+    height: 178px
+    border-radius: 6px
+    border: 1px solid $bd
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px
+    overflow: hidden
+    @include flex
+    transition: outline .1s linear
+    &:hover
+        outline: 1px solid $clb
+    .fddkfshdfijsdd
+        width: 132px
+        height: 100%
+        img
+            width: 100%
+            object-fit: cover
+            object-position: center
+            height: 100%
+    .fjkdrwaejeioaw
+        flex: 1 1 0
+    .djfjlejwioejqi
+        .pofkwopeas
+            width: 100%
+            img
+                width: 16px
+                height: 16px
+        width: 160px
+        height: 100%
+        border-left: 1px solid $bd
+        @include flexv
+        justify-content: space-between
+        padding: 16px 8px 16px 16px
+        .fkfapwokwopewaw
+            width: 100%
+            color: #f96d01
+            font-weight: 700
+            font-size: 20px
+    .fjkdrwaejeioaw
+        height: 100%
+        padding: 16px 
+        .ijwekpoawkaopaw
+            @include ft
+            font-size: 18px
+            margin-bottom: 8px 
+            white-space: nowrap
+        .jeoiejrirjioewjioejsiowep
+            @include flex
+            justify-content: flex-start
+            gap: 10px
+            margin-bottom: 8px
+            .diosrjeirawpipwoawwa
+                border-radius: 80px
+                border: 1px solid $clb
+                font-size: 12px
+                @include flex
+                color: $clb
+                padding: 2px 8px
+                font-weight: 600
+        .fpoiopedfopsfdkgopdsdfdsef
+            @include flex
+            justify-content: flex-start
+            gap: 4px
+            .kfpkropepeeas
+                font-size: 12px 
+                color: $cl
+.fjiasjfdiafsae
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 100%
+    gap: 10px
+    >div
+        display: flex
+        max-width: 48%
+.jdofjkfaekfwef, .djfgjfdklergewr
+    background: #fff
+.dkekqopwa
+    width: 100%
+    .qoe-1
+        transition: outline .05s linear
+        justify-content: center
+        &:hover
+            outline: 1px solid #0194f3
+        width: 100%
+        // height: 200px
+        padding-bottom: 10px
+        border-radius: 6px
+        background: #fff
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px
+        .sow-1
+            box-sizing: border-box
+            padding: 24px 24px 0 24px   
+            @include flex
+            justify-content: space-between   
+            flex-direction: column
+            .koa-1
+                flex: 1 1 0
+                height: 100%
+                .kwe-3
+                    // height: 57px
+                    @include flex
+                    flex-direction: column
+                    .gae-2
+                        width: 216px
+                        height: 100%    
+                        @include flex
+                        align-items: center
+                        >div
+                            &:first-of-type
+                                @include flex
+                                margin-right: 8px
+                            &:last-of-type
+                                @include ft
+                                font-size: 16px
+                                // height: 28px
+                    .ekw-5
+                        flex: 1 1 0
+                        height: 100%
+                        @include flex
+                        .iwe-2
+                            @include flex
+                            .eewo-1
+                                margin: 0 40px
+                                height: 57px
+                                width: 96px
+                                @include flexv
+                                .jiew-2
+                                    height: 20px
+                                    @include flex
+                                    color: $cl
+                                    @include ft
+                                .owew-2
+                                    color: $cl
+                                    @include ft
+                                    width: 96px
+                                    @include flex
+                                    .ewoq-4
+                                        width: 8px
+                                        height: 8px
+                                        border-radius: 50%
+                                        border: 1px solid $bd
+                                        background: #fff
+                                    .ewrq-3
+                                        width: 8px
+                                        height: 8px
+                                        border-radius: 50%
+                                        background: #cdd0d1
+                                    .dwiew-1
+                                        flex: 1 1 0
+                                        height: 1px
+                                        border-bottom: 1px solid $bd
+                            >div
+                                &:first-of-type,&:last-of-type
+                                    @include flexv
+                                    .dwo-3
+                                        @include ft
+                                        @include flex
+                                        white-space: nowrap
+                                    .anj-7
+                                        padding: 0 8px
+                                        height: 20px
+                                        margin-top: 8px
+                                        padding-bottom: 2px
+                                        text-transform: uppercase
+                                        border-radius: 20px
+                                        @include ft
+                                        color: #687176
+                                        background: #f2f3f3
+                                        font-size: 16px
+                                        width: max-content
+
+                // .eoq-5
+
+            .fsm-1
+                max-width: 200px
+                min-width: 165px
+                -webkit-box-pack: start
+                margin-left: 16px    
+                height: 100%
+                @include flexv
+                .dkoew-1
+                    height: 20px
+                    margin-bottom: 2px
+                    @include ft
+                    color: $cl
+                    text-decoration-line: line-through
+                    @include flex
+                    justify-content: flex-end
+                .oweweo-2
+                    height: 20px
+                    margin-bottom: 20px
+                    @include flex
+                    
+                    .dkoekw-1
+                        color: #ff5e1f
+                        @include ft
+                        font-size: 20px
+                        white-space: nowrap
+                        @include flex
+                        font-weight: 600
+                        
+                    .dwejwe-1
+                        @include ft
+                        @include flex
+                        color: $cl
+                .iwtap-3
+                    width: 170px
+                    height: 20px
+                    @include flex
+                    background: #ff5e1f
+                    color: #fff 
+                    @include ft
+                    padding: 8px 0
+                    border-radius: 8px
+                    user-select: none
+                    cursor: pointer
+                    &:hover
+                        &:active
+                            opacity: 0.5
+.djefgjegffd
+    margin-bottom: 8px
+.gwedgdergferg
+    
+    .djfjlejwioejqi
+        width: 145px !important
+        margin: 0 !important
+    .sfjepeqkpoqwow
+        width: 48% !important
+        .fjkdrwaejeioaw
+            width: 100px !important
+            padding: 8px !important
+    .ijwekpoawkaopaw
+        overflow: hidden
+        text-overflow: ellipsis
+    .diosrjeirawpipwoawwa
+        white-space: nowrap !important
+.active
+    color: #2e89ff !important
+.dsoewwas
+    &:hover
+        background: #f2f0f5
+.gegfdsesgfdes
+    .qoe-1
+        transition: outline .05s linear
+        &:hover
+            outline: 1px solid #0194f3
+        max-width: 1022px
+        width: 100%
+        height: 174px
+        border-radius: 6px
+        background: #fff
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px
+        .sow-1
+            box-sizing: border-box
+            padding: 24px 24px 0 24px   
+            @include flex
+            justify-content: space-between   
+            .koa-1
+                flex: 1 1 0
+                height: 100%
+                .kwe-3
+                    height: 57px
+                    @include flex
+                    .gae-2
+                        width: 216px
+                        height: 100%    
+                        @include flex
+                        align-items: center
+                        >div
+                            &:first-of-type
+                                @include flex
+                                margin-right: 8px
+                            &:last-of-type
+                                @include ft
+                                font-size: 16px
+                                // height: 28px
+                    .ekw-5
+                        flex: 1 1 0
+                        height: 100%
+                        @include flex
+                        .iwe-2
+                            @include flex
+                            .eewo-1
+                                margin: 0 40px
+                                height: 57px
+                                width: 96px
+                                @include flexv
+                                .jiew-2
+                                    height: 20px
+                                    @include flex
+                                    color: $cl
+                                    @include ft
+                                .owew-2
+                                    color: $cl
+                                    @include ft
+                                    width: 96px
+                                    @include flex
+                                    .ewoq-4
+                                        width: 8px
+                                        height: 8px
+                                        border-radius: 50%
+                                        border: 1px solid $bd
+                                        background: #fff
+                                    .ewrq-3
+                                        width: 8px
+                                        height: 8px
+                                        border-radius: 50%
+                                        background: #cdd0d1
+                                    .dwiew-1
+                                        flex: 1 1 0
+                                        height: 1px
+                                        border-bottom: 1px solid $bd
+                            >div
+                                &:first-of-type,&:last-of-type
+                                    @include flexv
+                                    .dwo-3
+                                        @include ft
+                                        @include flex
+                                        white-space: nowrap
+                                    .anj-7
+                                        padding: 0 8px
+                                        height: 20px
+                                        margin-top: 8px
+                                        padding-bottom: 2px
+                                        text-transform: uppercase
+                                        border-radius: 20px
+                                        @include ft
+                                        color: #687176
+                                        background: #f2f3f3
+                                        font-size: 16px
+                                        width: max-content
+
+                // .eoq-5
+
+            .fsm-1
+                max-width: 200px
+                min-width: 165px
+                -webkit-box-pack: start
+                margin-left: 16px    
+                height: 100%
+                @include flexv
+                .dkoew-1
+                    height: 20px
+                    margin-bottom: 2px
+                    @include ft
+                    color: $cl
+                    text-decoration-line: line-through
+                    @include flex
+                    justify-content: flex-end
+                .oweweo-2
+                    height: 20px
+                    margin-bottom: 20px
+                    @include flex
+                    
+                    .dkoekw-1
+                        color: #ff5e1f
+                        @include ft
+                        font-size: 20px
+                        white-space: nowrap
+                        @include flex
+                        font-weight: 600
+                        
+                    .dwejwe-1
+                        @include ft
+                        @include flex
+                        color: $cl
+                .iwtap-3
+                    width: 170px
+                    height: 20px
+                    @include flex
+                    background: #ff5e1f
+                    color: #fff 
+                    @include ft
+                    padding: 8px 0
+                    border-radius: 8px
+                    user-select: none
+                    cursor: pointer
+                    &:hover
+                        &:active
+                            opacity: 0.5
+.gegfdsesgfdes
+    .sfjepeqkpoqwow
+        max-width: 98% !important
+
+.gegdesfdgds
+    border-radius: 50% !important
+    padding: 5px !important
+    box-sizing: content-box !important
+    transition: background .1s linear !important
+    &:hover
+        background: #3a3b3c  !important
+        color: #fff !important  
+.sfdefdedg
+    transition: width .2s linear !important
+.dsoewwas
+    white-space: nowrap !important
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+
+/* Firefox */
+input[type=number] 
+  -moz-appearance: textfield
+.fgdfjfjgdnjwrlgkl
+    @include flex
+    justify-content: flex-start
+    gap: 10px
