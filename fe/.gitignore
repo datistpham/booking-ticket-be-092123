@@ -10,7 +10,12 @@
 
 # production
 /build
-/src/admin
+/src/admin/components/AddFlight.js
+/src/admin/components/AddHotel.js
+/src/admin/components/ComponentAdmin.js
+/src/admin/components/ComponentOption.js
+/src/admin/components/HotelFlightDetail.js
+/src/admin/components/TimeFlightDetail.js
 /src/error
 /src/combohotelflight
 /src/payment
