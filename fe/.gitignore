@@ -10,9 +10,9 @@
 
 # production
 /build
-/src/error
-/src/combohotelflight
-/src/payment
+
+
+
 
 # misc
 .DS_Store

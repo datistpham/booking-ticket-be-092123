@@ -1,0 +1,39 @@
+.failure-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .failure-icon {
+    font-size: 48px;
+    color: #e74c3c;
+  }
+  
+  .failure-text {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .failure-details {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    margin-top: 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
