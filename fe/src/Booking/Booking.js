@@ -81,7 +81,7 @@ const Booking = (props) => {
     <>
       <div style={{width: "100%", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
         {
-          error=== true &&  <>
+          error=== false &&  <>
           <div style={{width: "100%", maxWidth: 1024}}>
           <div style={{fontSize: 24, fontWeight: 600}}>Đặt chỗ của tôi</div>
           <div>Điền thông tin của bạn và các hành khách</div>
